@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="curso.and02.alumni"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="curso.and02.alumni.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="curso.and02.alumni.CreateAlumni"
+            android:label="@string/title_activity_create_alumni"
+            android:parentActivityName="curso.and02.alumni.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="curso.citic02.alumni.MainActivity" />
+        </activity>
+        <activity
+            android:name="curso.and02.alumni.AlimniDetail"
+            android:label="@string/title_activity_alimni_detail" >
+        </activity>
+        <activity
+            android:name="curso.and02.alumni.AlumniList"
+            android:label="@string/title_activity_alumni_list"
+            android:parentActivityName="@string/title_activity_main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+    </application>
+
+</manifest>

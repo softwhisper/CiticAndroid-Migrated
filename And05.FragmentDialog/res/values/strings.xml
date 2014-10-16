@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="example">Ejemplo de un FragmentDialog</string>
+    <string name="app_name">And05</string>
+    <string name="name">Escribe tu nombre</string>
+    <string name="dialog_title">Título para el Dialog</string>
+
+</resources>

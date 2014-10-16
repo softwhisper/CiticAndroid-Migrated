@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Citic02.Alumni</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="say_hello">Saluda a la Gente</string>
+    <string name="go_to_list">Ver Alumnos</string>
+    <string name="wip">work in progress</string>
+    <string name="welcome">Bienvindos al CITIC</string>
+    <string name="form_header">Introduce los datos del alumno</string>
+    <string name="name">Nombre</string>
+    <string name="address">Dirección</string>
+    <string name="group">Grupo</string>
+    <string name="m2nica">m2nica</string>
+    <string name="gtec">gtec</string>
+    <string name="lidia">lidia</string>
+    <string name="mads">mads</string>
+    <string name="gac">gac</string>
+    <string name="area">Aread de Investigación</string>
+    <string name="ispresent">¿Asiste hoy al curso?</string>
+    <string name="checked">Si</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="title_activity_create_alumni">CreateAlumni</string>
+    <string name="action_settings">Settings</string>
+    <string name="create_alumni">Alta de alumnos</string>
+    <string name="jose">Soludar a Jose</string>
+    <string name="title_activity_alimni_detail">AlimniDetail</string>
+    <string name="title_activity_alumni_list">Listado de Alumnos</string>
+    <string name="pfe_web">Web de Pablo</string>
+    <string name="view_picker">Ver vídeos</string>
+
+</resources>
