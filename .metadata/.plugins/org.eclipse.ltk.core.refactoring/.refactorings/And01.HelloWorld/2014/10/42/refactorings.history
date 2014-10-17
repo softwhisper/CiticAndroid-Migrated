@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Extracts string &apos;null&apos; into R.string.mi_texto" description="Extracts string &apos;null&apos; into R.string.mi_texto" flags="6" id="com.android.ide.eclipse.adt.refactoring.extract.string" mode="SELECT_NEW_ID" proj="/And01.HelloWorld" rplc-all-java="false" rplc-all-xml="false" stamp="1413460164593"/>
+<session version="1.0">&#x0A;<refactoring comment="Extracts string &apos;null&apos; into R.string.mi_texto" description="Extracts string &apos;null&apos; into R.string.mi_texto" flags="6" id="com.android.ide.eclipse.adt.refactoring.extract.string" mode="SELECT_NEW_ID" proj="/And01.HelloWorld" rplc-all-java="false" rplc-all-xml="false" stamp="1413460164593"/>&#x0A;<refactoring comment="Extracts string &apos;null&apos; into R.string.navigate" description="Extracts string &apos;null&apos; into R.string.navigate" flags="6" id="com.android.ide.eclipse.adt.refactoring.extract.string" mode="SELECT_NEW_ID" proj="/And01.HelloWorld" rplc-all-java="false" rplc-all-xml="false" stamp="1413533561677"/>
 </session>

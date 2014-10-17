@@ -1,0 +1,50 @@
+package and02.almnos2;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Button;
+
+
+/**
+ * Main 
+ * 
+ * @author pablo
+ *
+ */
+public class MainActivity extends Activity {
+	
+	private static Context context;	
+	
+	private Button btnSaludar;
+	private Button btnWeb;
+	private Button btnLista;
+	private Button btnForm;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        context = this;
+        
+        bindUI();
+        setActions();
+    }
+    
+    
+    private void bindUI() {
+    	btnSaludar = (Button)findViewById(R.id.btn_saludar);
+    	btnWeb = (Button)findViewById(R.id.btn_web);
+    	btnLista = (Button)findViewById(R.id.btn_list);
+    	btnForm = (Button)findViewById(R.id.btn_form);
+    }
+    
+    private void setActions() {
+    	
+    }
+    
+    
+}

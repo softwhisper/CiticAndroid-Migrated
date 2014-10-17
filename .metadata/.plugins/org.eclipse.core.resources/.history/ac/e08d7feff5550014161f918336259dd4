@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Almnos2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello">Controles App</string>
+    <string name="toast_msg">Saludar</string>
+    <string name="load_webview">Cargar WebView</string>
+    <string name="list">Listado de Alumnos</string>
+    <string name="form_student">Crear Alumno</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_form">CreateForm</string>
+    <string name="name">Nombre</string>
+    <string name="apellido">Apellidos</string>
+    <string-array name="genero">
+        <item >Hombre</item>
+        <item >Mujer</item>
+    </string-array>
+        <string name="guardar">Guardar</string>
+
+</resources>
