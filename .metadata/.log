@@ -1,111 +1,115 @@
-!SESSION 2014-10-16 02:12:24.124 -----------------------------------------------
+
+!ENTRY org.eclipse.jdt.core 4 4 2014-10-16 13:49:25.412
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: And01.HelloWorld
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource already exists on disk: '/And01.HelloWorld/bin/classes/.gitignore'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:305)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:566)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:381)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:222)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:95)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:191)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:119)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:46)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:254)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:178)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2014-10-16 13:49:25.412
+!MESSAGE Resource already exists on disk: '/And01.HelloWorld/bin/classes/.gitignore'.
+
+!ENTRY org.eclipse.jdt.core 4 4 2014-10-16 13:50:50.791
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: And01.HelloWorld
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource already exists on disk: '/And01.HelloWorld/bin/classes/.gitignore'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:305)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:566)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.copyResource(AbstractImageBuilder.java:381)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:222)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:95)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:191)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:119)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:46)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:254)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:178)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2014-10-16 13:50:50.792
+!MESSAGE Resource already exists on disk: '/And01.HelloWorld/bin/classes/.gitignore'.
+!SESSION 2014-10-16 14:06:07.465 -----------------------------------------------
 eclipse.buildId=4.3.2.M20140221-1700
 java.version=1.8.0_20
 java.vendor=Oracle Corporation
 BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
-Framework arguments:  -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -keyring /Users/pablo/.eclipse_keyring -showlocation
-Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -data /Users/pablo/Dropbox/Proyectos/CiticAndroid -product org.eclipse.epp.package.standard.product -keyring /Users/pablo/.eclipse_keyring -showlocation
+Framework arguments:  -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -keyring /Users/pablo/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -data /Users/pablo/Dropbox/Proyectos/CiticAndroid -product org.eclipse.epp.package.standard.product -keyring /Users/pablo/.eclipse_keyring -showlocation
 
-!ENTRY org.eclipse.core.net 1 0 2014-10-16 02:12:29.837
+!ENTRY org.eclipse.core.resources 2 10035 2014-10-16 14:06:09.716
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2014-10-16 14:06:14.011
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
 
-!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-16 02:13:31.496
-!MESSAGE 
+!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-16 14:24:27.185
+!MESSAGE Failed to add marker 'com.android.ide.eclipse.adt.lintProblem' to '/And01.HelloWorld/AndroidManifest.xml'
 !STACK 1
-org.eclipse.core.internal.resources.ResourceException: Resource '/And00.TrojanSMS/res' does not exist.
-	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
-	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
-	at com.android.ide.eclipse.adt.internal.sdk.Sdk$7.run(Sdk.java:1485)
+org.eclipse.core.internal.resources.ResourceException: Marker id 82 not found.
+	at org.eclipse.core.internal.resources.Marker.checkInfo(Marker.java:57)
+	at org.eclipse.core.internal.resources.Marker.setAttribute(Marker.java:237)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.markResource(BaseProjectHelper.java:146)
+	at com.android.ide.eclipse.adt.internal.lint.EclipseLintClient.report(EclipseLintClient.java:404)
+	at com.android.tools.lint.client.api.LintDriver$LintClientWrapper.report(LintDriver.java:2002)
+	at com.android.tools.lint.detector.api.Context.report(Context.java:286)
+	at com.android.tools.lint.detector.api.XmlContext.report(XmlContext.java:120)
+	at com.android.tools.lint.checks.ManifestDetector.visitElement(ManifestDetector.java:710)
+	at com.android.tools.lint.client.api.ResourceVisitor.visitElement(ResourceVisitor.java:177)
+	at com.android.tools.lint.client.api.ResourceVisitor.visitElement(ResourceVisitor.java:213)
+	at com.android.tools.lint.client.api.ResourceVisitor.visitFile(ResourceVisitor.java:158)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:956)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:880)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:431)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:374)
+	at com.android.ide.eclipse.adt.internal.lint.LintJob.run(LintJob.java:163)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 368 2014-10-16 02:13:31.497
-!MESSAGE Resource '/And00.TrojanSMS/res' does not exist.
-
-!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-16 02:13:31.498
-!MESSAGE 
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Resource '/And01/res' does not exist.
-	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
-	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
-	at com.android.ide.eclipse.adt.internal.sdk.Sdk$7.run(Sdk.java:1485)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 368 2014-10-16 02:13:31.498
-!MESSAGE Resource '/And01/res' does not exist.
-
-!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-16 02:13:31.511
-!MESSAGE 
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Resource '/And02.Alumni/res' does not exist.
-	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
-	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
-	at com.android.ide.eclipse.adt.internal.sdk.Sdk$7.run(Sdk.java:1485)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 368 2014-10-16 02:13:31.511
-!MESSAGE Resource '/And02.Alumni/res' does not exist.
-
-!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-16 02:13:31.523
-!MESSAGE 
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Resource '/And03.intenthtml/res' does not exist.
-	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
-	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
-	at com.android.ide.eclipse.adt.internal.sdk.Sdk$7.run(Sdk.java:1485)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 368 2014-10-16 02:13:31.523
-!MESSAGE Resource '/And03.intenthtml/res' does not exist.
-
-!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-16 02:13:31.523
-!MESSAGE 
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Resource '/And04.BR/res' does not exist.
-	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
-	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
-	at com.android.ide.eclipse.adt.internal.sdk.Sdk$7.run(Sdk.java:1485)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 368 2014-10-16 02:13:31.524
-!MESSAGE Resource '/And04.BR/res' does not exist.
-
-!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-16 02:13:31.530
-!MESSAGE 
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Resource '/And05.FragmentDialog/res' does not exist.
-	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
-	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
-	at com.android.ide.eclipse.adt.internal.sdk.Sdk$7.run(Sdk.java:1485)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 368 2014-10-16 02:13:31.530
-!MESSAGE Resource '/And05.FragmentDialog/res' does not exist.
-
-!ENTRY com.android.ide.eclipse.adt 4 0 2014-10-16 02:13:31.537
-!MESSAGE 
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Resource '/And06.FragmentList/res' does not exist.
-	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
-	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
-	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
-	at com.android.ide.eclipse.adt.internal.sdk.Sdk$7.run(Sdk.java:1485)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 368 2014-10-16 02:13:31.541
-!MESSAGE Resource '/And06.FragmentList/res' does not exist.
-!SESSION 2014-10-16 02:20:06.700 -----------------------------------------------
+!SUBENTRY 1 org.eclipse.core.resources 4 376 2014-10-16 14:24:27.188
+!MESSAGE Marker id 82 not found.
+!SESSION 2014-10-17 09:07:22.062 -----------------------------------------------
 eclipse.buildId=4.3.2.M20140221-1700
 java.version=1.8.0_20
 java.vendor=Oracle Corporation
 BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
-Framework arguments:  -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -keyring /Users/pablo/.eclipse_keyring -showlocation
-Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -data /Users/pablo/Dropbox/Proyectos/CiticAndroid -product org.eclipse.epp.package.standard.product -keyring /Users/pablo/.eclipse_keyring -showlocation
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/pablo/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/pablo/.eclipse_keyring -showlocation
 
-!ENTRY org.eclipse.core.net 1 0 2014-10-16 02:20:16.331
+!ENTRY org.eclipse.core.net 1 0 2014-10-17 09:07:33.247
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
