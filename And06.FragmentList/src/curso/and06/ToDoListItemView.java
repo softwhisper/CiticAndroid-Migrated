@@ -10,10 +10,9 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 /**
- * Implementación de un tercero para aplicar estilos y mejorar el aspecto.
+ * Implementaci√≥n de un tercero para aplicar estilos y mejorar el aspecto.
  * 
  * @author pablo
- *
  */
 public class ToDoListItemView extends TextView {
   
