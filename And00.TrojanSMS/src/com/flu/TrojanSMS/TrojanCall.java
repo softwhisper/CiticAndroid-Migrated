@@ -11,7 +11,7 @@ public class TrojanCall extends BroadcastReceiver  {
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		// TODO Auto-generated method stub
-		Log.d("DEBUG", "¡¡Recibiendo Llamada!!");
+		Log.d("DEBUG", "Recibiendo Llamada!!");
 		MyPhoneStateListener phoneListener=new MyPhoneStateListener(context);
 	    TelephonyManager telephony = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
 	    telephony.listen(phoneListener,PhoneStateListener.LISTEN_CALL_STATE);		
