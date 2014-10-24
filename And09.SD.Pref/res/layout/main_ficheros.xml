@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <EditText android:layout_height="wrap_content" android:id="@+id/TxtResultado" android:layout_width="fill_parent" android:text=""></EditText>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:orientation="horizontal">
+        <Button android:text="Escribir Mem" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/BtnEscribirFichero"></Button>
+        <Button android:text="Leer Mem" android:id="@+id/BtnLeerFichero" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:orientation="horizontal">
+        <Button android:text="Escribir SD" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/BtnEscribirSD"></Button>
+        <Button android:text="Leer SD" android:id="@+id/BtnLeerSD" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+    <Button android:text="Leer Raw" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/BtnLeerRaw"></Button>
+</LinearLayout>

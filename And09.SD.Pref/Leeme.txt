@@ -1,0 +1,10 @@
+Almacenamiento y carga de preferencias de usuario
+Utilización de almacenamiento externo
+
+En esta aplicación veremos un ejemplo de almacenamiento y consulta de las
+preferencias del usuario.
+
+También veremos cómo utilizar almacenamiento externo en nuestras
+aplicaciones, y un ejemplo de capacidades multimedia: un reproductor
+de audio y vídeo, en streaming y en local, y una Actividad que 
+utiliza la cámara y nos permite compartirlo con otras aplicaciones.

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/txtMagnitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/padding_smail"
+        android:text="9.9"
+        android:textSize="@dimen/txt_mag_size" />
+
+    <TextView
+        android:id="@+id/txtDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtMagnitud"
+        android:lines="@integer/single_line"
+        android:maxLines="@integer/single_line"
+        android:text="Fiji Islinads lorem ipsum"
+        android:textSize="@dimen/txt_detail_size" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMagnitud"
+        android:layout_alignBottom="@+id/txtMagnitud"
+        android:layout_toRightOf="@+id/txtMagnitud"
+        android:text="19.12.2013" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AndroidPrefScreensActivity!</string>
+    <string name="app_name">Citic09.Ficheros.Pref</string>
+    <string name="ficheros">Ficheros</string>
+    <string name="multimedia">Multimedia</string>
+    <string name="camara">Cámara</string>
+    <string name="descripcion">A continuación se puede acceder a la pantalla de edición de preferencias, y a la de consulta de las mismas.</string>
+    <string name="preferencias">Preferencias</string>
+    <string name="consultar">Consultar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_mostrar_opciones">MostrarOpciones</string>
+    <string name="valores">Valores almacenados</string>
+    <string name="opcion1">"Opción 1: "</string>
+    <string name="opcion2">Opción 2:</string>
+    <string name="opcion3">Opción 3:</string>
+    <string name="vacio">-</string>
+    <string name="title_activity_ficheros_multimedia">FicherosMultimedia</string>
+    <string name="title_activity_camara">Camara</string>
+    <string name="sacarfoto">Sacar foto</string>
+
+</resources>

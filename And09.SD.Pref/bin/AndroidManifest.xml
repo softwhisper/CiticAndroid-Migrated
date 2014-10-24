@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="curso.and09"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light" >
+        <activity
+            android:name="curso.and09.AndroidPrefScreensActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="curso.and09.PantallaOpciones"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="curso.and09.AndroidFicheros"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="curso.and09.MostrarOpciones"
+            android:label="@string/title_activity_mostrar_opciones" >
+        </activity>
+        <activity
+            android:name="curso.and09.FicherosMultimedia"
+            android:label="@string/title_activity_ficheros_multimedia" >
+        </activity>
+
+        <!-- ************************************* -->
+        <!-- MEDIA SAMPLES -->
+        <!-- ************************************* -->
+
+        <activity
+            android:name="curso.and09.MediaPlayerDemo"
+            android:label="Media/MediaPlayer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="curso.and09.MediaPlayerDemo_Audio"
+            android:label="Media/MediaPlayer" >
+            <intent-filter>
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="curso.and09.MediaPlayerDemo_Video"
+            android:label="Media/MediaPlayer" >
+            <intent-filter>
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="curso.and09.VideoViewDemo"
+            android:label="Media/VideoView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="curso.and09.Camara"
+            android:label="@string/title_activity_camara" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

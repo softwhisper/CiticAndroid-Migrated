@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_ficheros"
+        android:title="@string/ficheros"
+        android:icon="@android:drawable/ic_dialog_info" />
+    <item android:id="@+id/menu_multimedia"
+        android:title="@string/multimedia"
+        android:icon="@android:drawable/ic_media_play" />
+    <item android:id="@+id/menu_camara"
+        android:title="@string/camara"
+        android:icon="@android:drawable/ic_menu_gallery" />
+    <item android:id="@+id/menu_compartir"
+        android:title="Compartir"
+        android:icon="@android:drawable/ic_menu_share"/>
+</menu>
