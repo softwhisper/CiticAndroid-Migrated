@@ -17,16 +17,22 @@ public class TwitterRestClient {
 	  private static final String URL = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=pabloformoso";
 	  
 	  private static AsyncHttpClient client = new AsyncHttpClient();
-	  private static String token = "";
-	  private static String type = "";
+
+	  private static String token = "AAAAAAAAAAAAAAAAAAAAAB33DQAAAAAAHSgYw6rd0IJJqlAC972abkRLJx0%3DLoEMgdyVMoNXAsUGP9z1p71PJUWgis7dStdzaa9lsg8pZ7zp2V";
+	  private static String type = "bearer";
 	  
-	  public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
-		  
+	  public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {		 
+		  Log.d("TW", TwitterRestClient.type + " : " + TwitterRestClient.token);
+		  client.addHeader("Authorization", "bearer : AAAAAAAAAAAAAAAAAAAAAB33DQAAAAAAHSgYw6rd0IJJqlAC972abkRLJx0%3DLoEMgdyVMoNXAsUGP9z1p71PJUWgis7dStdzaa9lsg8pZ7zp2V");
+		  client.get(URL, params,responseHandler);
+	  }
+
+	  public static void getTWToken() {
 		  RequestParams requestParams = new RequestParams();
 		  requestParams.put("grant_type", "client_credentials");
 
 		  AsyncHttpClient httpClient = new AsyncHttpClient();
-		  httpClient.addHeader("Authorization", "Basic " + Base64.encodeToString(("G5OVyTNL6AeueuC4Dj7Cw" + ":" + "gO2j5KdXq6yGsSCRc1oiBcZtLRjk1POc47AzgHofWE").getBytes(), Base64.NO_WRAP));
+		  httpClient.addHeader("Authorization", "Basic " + Base64.encodeToString(("urzrdmDiXiBBJbpI7U1hkG2UR" + ":" + "3zJyo03i4wGB8FPkbJW44moIc4VxHHGw9omtkstfZBEjKMpadN").getBytes(), Base64.NO_WRAP));
 		  httpClient.addHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
 		  httpClient.post("https://api.twitter.com/oauth2/token", requestParams, new AsyncHttpResponseHandler() {
 	          public void onSuccess(String response) {
@@ -34,7 +40,8 @@ public class TwitterRestClient {
 	                  JSONObject jsonObject = new JSONObject(response);
 	                  
 	                  TwitterRestClient.type = jsonObject.getString("token_type");
-	                  TwitterRestClient.token = jsonObject.getString("access_token");	                  
+	                  TwitterRestClient.token = jsonObject.getString("access_token");
+	                  Log.d("TW", TwitterRestClient.type + " : " + TwitterRestClient.token);
 	              } catch (JSONException e) {
 	                  e.printStackTrace();
 	              }
@@ -43,11 +50,9 @@ public class TwitterRestClient {
 	          public void onFailure(Throwable error, String response) {
 	              Log.e("", "error " + error.toString() + " response " + response);
 	          };
-	      });			  		 
-		  client.addHeader("Authorization", TwitterRestClient.type + ":" + TwitterRestClient.token);
-		  client.get(URL, params,responseHandler);
+	      });		  
 	  }
-
+	  
 	  public static void post(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
 	      client.post(getAbsoluteUrl(url), params, responseHandler);
 	  }

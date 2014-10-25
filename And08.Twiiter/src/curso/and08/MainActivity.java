@@ -34,6 +34,7 @@ public class MainActivity extends ListActivity {
 		context = this;
 		
 		try {
+			//TwitterRestClient.getTWToken();
 			getPublicTimeline();
 		} catch (JSONException e) {
 			e.printStackTrace();

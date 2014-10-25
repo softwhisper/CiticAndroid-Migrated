@@ -85,7 +85,7 @@ public class FragmentList extends ListFragment {
 			Bundle b = msg.getData();
 			earthquakes = b.getParcelableArrayList("quakes");
 			
-			if	(Utils.getScreenWidth(getActivity()) < 500) {
+			if	(Utils.getScreenWidth(getActivity()) < 320) {
 				adapter = new QuakesListAdapter(getActivity(), earthquakes);
 				setListAdapter(adapter);
 			} else {

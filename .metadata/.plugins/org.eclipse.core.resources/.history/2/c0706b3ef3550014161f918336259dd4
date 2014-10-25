@@ -1,7 +1,0 @@
-package and02.almnos2.models;
-
-import java.io.Serializable;
-
-public class Alumno implements Serializable {
-
-}

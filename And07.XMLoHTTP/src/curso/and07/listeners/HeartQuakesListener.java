@@ -73,7 +73,7 @@ public class HeartQuakesListener extends CustomListener {
 			// Get a list of each earthquake entry.
 			NodeList nl = docEle.getElementsByTagName("entry");
 			if (nl != null && nl.getLength() > 0) {
-				for (int i = 0 ; i < nl.getLength(); i++) {
+				for (int i = 1; i < nl.getLength(); i++) {
 					Element entry = (Element)nl.item(i);
 					Element title = (Element)entry.getElementsByTagName("title").item(0);
 					Element g = (Element)entry.getElementsByTagName("georss:point").item(0);

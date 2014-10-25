@@ -20,4 +20,6 @@
 <fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
 <fullyQualifiedTypeName name="and02.almnos2.ListActivity"/>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.os.AsyncTask"/>
+<fullyQualifiedTypeName name="curso.and08.client.TwitterRestClient"/>
 </qualifiedTypeNameHistroy>

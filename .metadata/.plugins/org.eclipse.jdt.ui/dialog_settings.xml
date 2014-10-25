@@ -55,6 +55,9 @@
 		<item value="1" key="VisibilityModifier"/>
 		<item value="false" key="FinalModifier"/>
 	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="4" key="index"/>
+	</section>
 	<section name="BuildPathsPropertyPage">
 		<item value="3" key="pageIndex"/>
 	</section>

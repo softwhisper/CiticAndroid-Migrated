@@ -41,15 +41,14 @@ public class MainActivity extends ActionBarActivity {
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, fragment).commit();
-        }
-        
+        }      
     }
     
     @Override
     protected void onResume() {
     	super.onResume();
     	fragment.setPbVisible(true);
-    	JsonObjectRequest jobj = new JsonObjectRequest("http://api.openweathermap.org/data/2.5/weather?q=London,uk", null, new Response.Listener<JSONObject>() {
+    	JsonObjectRequest jobj = new JsonObjectRequest("http://api.openweathermap.org/data/2.5/weather?q=Oleiros,es", null, new Response.Listener<JSONObject>() {
 
 			@Override
 			public void onResponse(JSONObject jsonObj) {
