@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">And14.Env</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="pressure">Presión</string>
+    <string name="light">&quot;Intensidad&quot;</string>
+
+</resources>

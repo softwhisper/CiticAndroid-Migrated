@@ -123,7 +123,7 @@ public class AndroidFicheros extends Activity {
 					sdAccesoEscritura = false;
 				}
 
-				// Si la memoria externa est· disponible y se puede escribir
+				// Si la memoria externa est√° disponible y se puede escribir
 				if (sdDisponible && sdAccesoEscritura) {
 					try {
 						File ruta_sd = Environment
