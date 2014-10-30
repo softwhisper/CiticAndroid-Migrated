@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ContentProviders</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="cp_citic">curso.citic.clients</string>
+    <string name="insert">Insertar Clientes</string>
+    <string name="read">Consultar Clientes</string>
+    <string name="del">Eliminar Clientes</string>
+    <string name="call">Llamadas</string>
+
+</resources>

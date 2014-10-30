@@ -62,7 +62,7 @@ public class Camara extends Activity {
 					MediaStore.ACTION_IMAGE_CAPTURE);
 			startActivityForResult(takePictureIntent, actionCode);
 		} else {
-			Toast.makeText(this, "No hay c‡mara disponible...",
+			Toast.makeText(this, "No hay cï¿½mara disponible...",
 					Toast.LENGTH_LONG).show();
 		}
 	}
@@ -88,11 +88,9 @@ public class Camara extends Activity {
 				mImageBitmap = (Bitmap) extras.get("data");
 				ImageView img = (ImageView) findViewById(R.id.imgCamara);
 				img.setImageBitmap(mImageBitmap);
-
+				
 				saved = Images.Media.insertImage(this.getContentResolver(),
-						mImageBitmap, "Prueba", "Descripci—n prueba");
-				// Uri sdCardUri = Uri.parse("file://" +
-				// Environment.getExternalStorageDirectory());
+						mImageBitmap, "Prueba", "DescripciÃ³n prueba");
 
 			} else if (resultCode == RESULT_CANCELED) {
 				Toast.makeText(this, "No se ha sacado la foto",

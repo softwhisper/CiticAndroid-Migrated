@@ -48,7 +48,7 @@ public class AndroidFicheros extends Activity {
 				String linea = "";
 
 				try {
-					InputStream fraw = getResources().openRawResource(R.raw.prueba_raw);
+					InputStream fraw = getResources().openRawResource(R.raw.mp3);
 
 					BufferedReader brin = new BufferedReader(
 							new InputStreamReader(fraw));
@@ -73,7 +73,7 @@ public class AndroidFicheros extends Activity {
 							openFileOutput("prueba_int.txt",
 									Context.MODE_PRIVATE));
 
-					fout.write("Texto de prueba.");
+					fout.write(txtResultado.getText().toString());
 					fout.close();
 
 					txtResultado.setText("Fichero creado!");
@@ -129,19 +129,18 @@ public class AndroidFicheros extends Activity {
 						File ruta_sd = Environment
 								.getExternalStorageDirectory();
 
-						File f = new File(ruta_sd.getAbsolutePath(),
+						File f = new File(ruta_sd.getAbsolutePath() + "/Podcasts/",
 								"prueba_sd.txt");
 
 						OutputStreamWriter fout = new OutputStreamWriter(
 								new FileOutputStream(f));
-
-						fout.write("Texto de prueba.");
+						fout.write(txtResultado.getText().toString());
 						fout.close();
 
 						txtResultado.setText("Fichero SD creado!");
 					} catch (Exception ex) {
-						Log.e("Ficheros",
-								"Error al escribir fichero a tarjeta SD");
+						ex.printStackTrace();
+						Log.e("Ficheros", "Fallo de escritura");
 					}
 				}
 			}
@@ -153,7 +152,7 @@ public class AndroidFicheros extends Activity {
 				try {
 					File ruta_sd = Environment.getExternalStorageDirectory();
 
-					File f = new File(ruta_sd.getAbsolutePath(),
+					File f = new File(ruta_sd.getAbsolutePath() + "/Podcasts/",
 							"prueba_sd.txt");
 
 					BufferedReader fin = new BufferedReader(

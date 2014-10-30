@@ -31,17 +31,18 @@ public class MostrarOpciones extends Activity {
 			}
 		});
         
-        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(MostrarOpciones.this);
+        SharedPreferences pref = getSharedPreferences("APP", 0);
 			
 		Log.i("", "Opcion 1: " + pref.getBoolean("opcion1", false));
 		Log.i("", "Opcion 2: " + pref.getString("opcion2", ""));
 		Log.i("", "Opcion 3: " + pref.getString("opcion3", ""));
+		Log.i("", "Opcion 4: " + pref.getString("opcion4", ""));
 		
 		TextView tv = (TextView) findViewById(R.id.valor1);
 		if (pref.getBoolean("opcion1", false)){
-			tv.setText("Falso!");
-		}else{
 			tv.setText("Verdadero!");
+		}else{
+			tv.setText("Falso!");
 		}
 		tv = (TextView) findViewById(R.id.valor2);
 		tv.setText(pref.getString("opcion2", ""));

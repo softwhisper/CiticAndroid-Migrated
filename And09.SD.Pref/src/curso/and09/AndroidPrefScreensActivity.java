@@ -1,10 +1,12 @@
 package curso.and09;
 
 import curso.and09.R;
-
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -35,6 +37,12 @@ public class AndroidPrefScreensActivity extends Activity {
         
         btnObtenerPreferencias.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
+				SharedPreferences pref = getSharedPreferences("APP", MODE_PRIVATE);
+				
+				Editor edit = pref.edit();
+				edit.putString("opcion4", "Otra opción de forma programatica");
+				edit.commit();
+				
 				Intent intent = new Intent(AndroidPrefScreensActivity.this, MostrarOpciones.class);
 				startActivity(intent);
 			}

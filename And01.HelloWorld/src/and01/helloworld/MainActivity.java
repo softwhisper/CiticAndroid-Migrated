@@ -2,6 +2,7 @@ package and01.helloworld;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -31,6 +32,9 @@ public class MainActivity extends ActionBarActivity {
 				startActivity(intent);
 			}
 		});
+        
+        SharedPreferences pref = getSharedPreferences("APP", 0);
+        Log.i("", "Opción 4 de otra app: " + pref.getString("opcion4", "nos salio"));
     }
 
     
