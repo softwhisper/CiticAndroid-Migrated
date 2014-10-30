@@ -10,5 +10,41 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <Button
+        android:id="@+id/btnLlamadas"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/call" />
+
+    <Button
+        android:id="@+id/btnLeerClientes"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/read" />
+
+    <Button
+        android:id="@+id/btnInsertarCliente"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/insert" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/del" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
 
 </LinearLayout>
