@@ -28,14 +28,14 @@ public class MainActivity extends Activity {
 		sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
 		
 		// sensorManager.getOrientation(R, values);
-		// Se puede computar la salida con la matriz de rotaci—n 
+		// Se puede computar la salida con la matriz de rotaciï¿½n 
 		// SensorManager.getRotationMatrix(m_rotationMatrix, null, m_lastAccels, m_lastMagFields)
 		
 		if (sensor != null) {
 			sensorManager.registerListener(mySensorEventListener, sensor, SensorManager.SENSOR_DELAY_FASTEST);
 			Log.d("MAIN", "Sensor registered");
 		} else {
-		      Toast.makeText(this, "No se puede acceder a la orientaci—n", Toast.LENGTH_LONG).show();
+		      Toast.makeText(this, "No se puede acceder a la orientaciï¿½n", Toast.LENGTH_LONG).show();
 		      finish();			
 		}
 		
@@ -47,6 +47,7 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+	
 	private SensorEventListener mySensorEventListener = new SensorEventListener() {
 
 	    @Override

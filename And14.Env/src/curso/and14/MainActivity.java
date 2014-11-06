@@ -95,20 +95,20 @@ public class MainActivity extends Activity {
 		if (lightSensor != null)
 			sensorManager.registerListener(lightSensorListener, lightSensor, SensorManager.SENSOR_DELAY_NORMAL);
 		else
-			lightTextView.setText("No está disponible el sensor de temperatura");
+			lightTextView.setText("No est√° disponible el sensor de temperatura");
 		
-		Sensor tmpSensor = sensorManager.getDefaultSensor(Sensor.TYPE_TEMPERATURE);
+		Sensor tmpSensor = sensorManager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE);
 		if (tmpSensor != null)
 			sensorManager.registerListener(tempSensorListener, tmpSensor, SensorManager.SENSOR_DELAY_NORMAL);
 		else
-			temperatureTextView.setText("No está disponible el sensor de temperatura");
+			temperatureTextView.setText("No est√° disponible el sensor de temperatura");
 		
 
 		Sensor pressureSensor = sensorManager.getDefaultSensor(Sensor.TYPE_PRESSURE);
 		if (pressureSensor != null)
 			sensorManager.registerListener(pressureSensorListener, pressureSensor, SensorManager.SENSOR_DELAY_NORMAL);
 		else
-			pressureTextView.setText("No está disponible el sensor de presiones");		
+			pressureTextView.setText("No est√° disponible el sensor de presiones");		
 		
 	}
 	

@@ -79,7 +79,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Ca
 			Camera.Size selected = sizes.get(0);
 			params.setPreviewSize(selected.width, selected.height);
 			camera.setParameters(params);
-			camera.setDisplayOrientation(0);
+			camera.setDisplayOrientation(180);
 			
 			
 			try {
@@ -90,7 +90,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Ca
 			
 			camera.startPreview();
 		} else {
-			Toast.makeText(this, "No hay camara o hay algœn error.", Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "No hay camara o hay algï¿½n error.", Toast.LENGTH_LONG).show();
 		}
 	}
 
