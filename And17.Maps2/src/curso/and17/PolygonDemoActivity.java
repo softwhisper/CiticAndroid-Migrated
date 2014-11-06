@@ -95,8 +95,7 @@ public class PolygonDemoActivity extends FragmentActivity implements OnSeekBarCh
         // Create a rectangle with two rectangular holes.
         mMap.addPolygon(new PolygonOptions()
                 .addAll(createCWRectangle(new LatLng(-20, 130), 5, 5))
-                .addHole(createCWRectangle(new LatLng(-22, 128), 1, 1))
-                .addHole(createCWRectangle(new LatLng(-18, 133), 0.5, 1.5))
+                .addHole(createCWRectangle(new LatLng(-20, 130), 3, 3))
                 .fillColor(Color.CYAN)
                 .strokeColor(Color.BLUE)
                 .strokeWidth(5));

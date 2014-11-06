@@ -12,6 +12,7 @@ int attr uiZoomControls 0x7f01000a
 int attr uiZoomGestures 0x7f01000b
 int attr useViewLifecycle 0x7f01000c
 int attr zOrderOnTop 0x7f01000d
+int dimen textSize 0x7f060000
 int drawable ic_launcher 0x7f020000
 int id hybrid 0x7f040004
 int id myLocationText 0x7f040005

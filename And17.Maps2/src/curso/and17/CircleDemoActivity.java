@@ -69,6 +69,7 @@ public class CircleDemoActivity extends FragmentActivity implements OnSeekBarCha
         private final Marker radiusMarker;
         private final Circle circle;
         private double radius;
+        
         public DraggableCircle(LatLng center, double radius) {
             this.radius = radius;
             centerMarker = mMap.addMarker(new MarkerOptions()
@@ -86,6 +87,7 @@ public class CircleDemoActivity extends FragmentActivity implements OnSeekBarCha
                     .strokeColor(mStrokeColor)
                     .fillColor(mFillColor));
         }
+        
         public DraggableCircle(LatLng center, LatLng radiusLatLng) {
             this.radius = toRadiusMeters(center, radiusLatLng);
             centerMarker = mMap.addMarker(new MarkerOptions()

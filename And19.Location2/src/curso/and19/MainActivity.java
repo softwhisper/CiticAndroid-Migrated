@@ -62,18 +62,21 @@ public class MainActivity extends MapActivity {
 
     Criteria criteria = new Criteria();
     criteria.setAccuracy(Criteria.ACCURACY_FINE);
-    criteria.setPowerRequirement(Criteria.POWER_LOW);
+    criteria.setPowerRequirement(Criteria.POWER_HIGH);
     criteria.setAltitudeRequired(false);
     criteria.setBearingRequired(false);
     criteria.setSpeedRequired(false);
     criteria.setCostAllowed(true);
-    String provider = LocationManager.GPS_PROVIDER; //locationManager.getBestProvider(criteria, true);
+    
+    String provider = LocationManager.NETWORK_PROVIDER; //locationManager.getBestProvider(criteria, true); //LocationManager.GPS_PROVIDER; 
+    
+    
 
     Location l = locationManager.getLastKnownLocation(provider);
 
     updateWithNewLocation(l);
 
-    locationManager.requestLocationUpdates(provider, 2000, 10,
+    locationManager.requestLocationUpdates(provider, 1000, 1,
                                            locationListener);
 
   }

@@ -34,7 +34,7 @@
     android:hardwareAccelerated="true">
     <meta-data
       android:name="com.google.android.maps.v2.API_KEY"
-      android:value="AIzaSyDbSy-FU7iEoWq4fVOaj97izll7oB-g1Do"/>
+      android:value="AIzaSyDnpDGf2PdL60UAzSbdiq3Vts3Hg9LMwG0"/>
     
     <activity android:name="curso.and17.MainActivity">
       <intent-filter>

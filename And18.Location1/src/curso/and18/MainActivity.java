@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
     String svcName = Context.LOCATION_SERVICE;
     locationManager = (LocationManager)getSystemService(svcName);
 
-    String provider = LocationManager.NETWORK_PROVIDER;
+    String provider = LocationManager.GPS_PROVIDER;
     Location l = locationManager.getLastKnownLocation(provider);
 
     updateWithNewLocation(l);
