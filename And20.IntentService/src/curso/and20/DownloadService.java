@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Message;
 import android.os.Messenger;
+import android.os.RemoteException;
 import android.util.Log;
 
 public class DownloadService extends IntentService {
@@ -72,18 +73,19 @@ public class DownloadService extends IntentService {
 			}
 		}
 
-		Bundle extras = intent.getExtras();
-		if (extras != null) {
-			Messenger messenger = (Messenger) extras.get("MESSENGER");
+		Bundle bundle = intent.getExtras();
+		
+		if (bundle != null) {
+			Messenger messenger = (Messenger)bundle.get("MESSENGER");
 			Message msg = Message.obtain();
 			msg.arg1 = result;
 			msg.obj = output.getAbsolutePath();
+			
 			try {
 				messenger.send(msg);
-			} catch (android.os.RemoteException e1) {
-				Log.w(getClass().getName(), "Exception sending message", e1);
+			} catch (RemoteException e) {
+				e.printStackTrace();
 			}
-
 		}
 	}
 }

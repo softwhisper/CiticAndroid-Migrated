@@ -40,8 +40,7 @@ public class MainActivity extends ListActivity {
 
 		public void onServiceConnected(ComponentName className, IBinder binder) {
 			s = ((LocalWordService.MyBinder) binder).getService();
-			Toast.makeText(MainActivity.this, "Connected", Toast.LENGTH_SHORT)
-					.show();
+			Toast.makeText(MainActivity.this, "Conectado", Toast.LENGTH_LONG).show();
 		}
 
 		public void onServiceDisconnected(ComponentName className) {
@@ -51,15 +50,13 @@ public class MainActivity extends ListActivity {
 	};
 
 	void doBindService() {
-		bindService(new Intent(this, LocalWordService.class), mConnection,
-				Context.BIND_AUTO_CREATE);
+		bindService(new Intent(this, LocalWordService.class), mConnection, Context.BIND_AUTO_CREATE);
 	}
 
 	public void showServiceData(View view) {
 		if (s != null) {
 
-			Toast.makeText(this, "Number of elements" + s.getWordList().size(),
-					Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "Number of elements" + s.getWordList().size(), Toast.LENGTH_SHORT).show();
 			wordList.clear();
 			wordList.addAll(s.getWordList());
 			adapter.notifyDataSetChanged();

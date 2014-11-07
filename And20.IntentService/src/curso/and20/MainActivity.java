@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
 			Object path = message.obj;
 			
 			if (message.arg1 == RESULT_OK && path != null) {
-				Toast.makeText(MainActivity.this, "Downloaded" + path.toString(), Toast.LENGTH_LONG).show();
+				Toast.makeText(MainActivity.this, "Downloaded " + path.toString(), Toast.LENGTH_LONG).show();
 			} else {
 				Toast.makeText(MainActivity.this, "Download failed.", Toast.LENGTH_LONG).show();
 			}
@@ -40,14 +40,13 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-			    Intent intent = new Intent(MainActivity.this, DownloadService.class);
-			    
-			    // Create a new Messenger for the communication back
-			    Messenger messenger = new Messenger(handler);
-			    intent.putExtra("MESSENGER", messenger);
-			    intent.setData(Uri.parse("http://www.vogella.com/articles/AndroidServices/article.html"));
-			    intent.putExtra("urlpath", "http://www.vogella.com/articles/AndroidServices/article.html");
-			    startService(intent);				
+				Intent intent = new Intent(MainActivity.this, DownloadService.class);
+				
+				Messenger messenger = new Messenger(handler);
+				intent.putExtra("MESSENGER", messenger);
+				intent.setData(Uri.parse("http://softwhisper.es/equipo"));
+				intent.putExtra("urlpath", "http://softwhisper.es/equipo");
+				startService(intent);
 			}
 		});
 	}

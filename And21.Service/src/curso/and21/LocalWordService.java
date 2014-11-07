@@ -24,22 +24,16 @@ public class LocalWordService extends Service {
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		Log.d("SERVICE", "onStartCommand");
 		
-		Random random = new Random();
-		if (random.nextBoolean()) {
-			list.add("Linux");
+		Random rnd = new Random();
+		if (rnd.nextBoolean()) {
+			list.add("Softwhisper");
 		}
-		if (random.nextBoolean()) {
+		if (rnd.nextBoolean()) {
+			list.add("Citic");
+		}		
+		if (rnd.nextBoolean()) {
 			list.add("Android");
-		}
-		if (random.nextBoolean()) {
-			list.add("iPhone");
-		}
-		if (random.nextBoolean()) {
-			list.add("Windows7");
-		}
-		if (list.size() >= 20) {
-			list.remove(0);
-		}
+		}		
 		
 		return Service.START_NOT_STICKY;
 	}
@@ -53,7 +47,7 @@ public class LocalWordService extends Service {
 	public class MyBinder extends Binder {
 		LocalWordService getService() {
 			Log.d("SERVICE", "returnService()");
-			return LocalWordService.this;
+			return LocalWordService.this;		
 		}
 	}
 
