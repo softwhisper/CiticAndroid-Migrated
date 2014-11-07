@@ -41,15 +41,6 @@ public abstract class ActiveRecord extends Object{
      * @return
      */
     private static Dao getDao(Context context, Class c){
-    	/*
-    	if (!isManualHelper){
-    		db = OpenHelperManager.getHelper(context, DatabaseHelper.class);	
-    	}else{
-    		if (db == null){
-    			db = OpenHelperManager.getHelper(context, DatabaseHelper.class);
-    		}
-    	}
-    	*/
         
     	DatabaseHelper db = OpenHelperManager.getHelper(context, DatabaseHelper.class);
         try {
@@ -66,13 +57,6 @@ public abstract class ActiveRecord extends Object{
     private static void releaseDao(){
     
     	OpenHelperManager.releaseHelper();
-    	
-    	/*
-    	if (!isManualHelper){
-            OpenHelperManager.releaseHelper();
-            db = null;
-    	}
-    	*/
     }
     
     /**
@@ -83,14 +67,6 @@ public abstract class ActiveRecord extends Object{
     private static boolean isCreatedOrUpdated(Dao.CreateOrUpdateStatus status){
         if (status == null)
             return false;
-        /*
-        if (BuildConfig.DEBUG){
-        	Log.e(TAG, "isCreated:  "+ status.isCreated());
-        }
-        if (BuildConfig.DEBUG){
-        	Log.e(TAG, "isUpdated:  "+ status.isUpdated());
-        }
-        */
         if (status.isCreated() || status.isUpdated())
             return true;
 
@@ -98,15 +74,6 @@ public abstract class ActiveRecord extends Object{
     }
     
     //TODO: problema cuando se ejecutan en paralelo varias querys. cuando 
-    /*
-    public static void setManualManageHelper(boolean enable){
-    	isManualHelper = enable;
-    	
-    	if (!isManualHelper){
-    		OpenHelperManager.releaseHelper();
-    		db = null;
-    	}
-    }*/
 
     public static<T extends ActiveRecord> List<T>findAll(Context ctx, Class table){
         Dao<T,Integer> dao = ActiveRecord.getDao(ctx, table);
