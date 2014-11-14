@@ -1,5 +1,6 @@
 package and25.completo;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.json.JSONArray;
@@ -12,9 +13,16 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.google.gson.Gson;
 
+import curso.and06.R;
+import curso.and06.ToDoItem;
+import curso.and06.ToDoItemAdapter;
+import curso.and06.ToDoListFragment;
+import and25.completo.adapters.StudentArrayAdapter;
+import and25.completo.fragments.StudentListFragment;
 import and25.completo.models.Student;
 import and25.completo.shared.VolleySingleton;
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -24,10 +32,22 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+	private StudentListFragment stdListFragment;
+	private ArrayList<Student> students;
+	private StudentArrayAdapter aa;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        FragmentManager fm = getFragmentManager();
+        
+        stdListFragment = (StudentListFragment)fm.findFragmentById(R.id.fragment1);
+        students = new ArrayList<Student>();
+        
+        
+        aa = new StudentArrayAdapter(this, R.layout.student_list_item, students);
+        stdListFragment.setListAdapter(aa);        
     }
 
     @Override
