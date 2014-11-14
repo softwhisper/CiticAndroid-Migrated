@@ -4,9 +4,11 @@ import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
 import and25.completo.bbdd.ActiveRecord;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 @DatabaseTable
-public class Student extends ActiveRecord {
+public class Student extends ActiveRecord implements Parcelable {
 	
 	public final String TAG = "Student";
 	
@@ -45,6 +47,28 @@ public class Student extends ActiveRecord {
 
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	@Override
+	public int describeContents() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+    public Student(Parcel in) {
+        name = in.readString();
+        lastname = in.readString();
+        email = in.readString();
+        city = in.readString();
+    }	
+	
+	@Override
+	public void writeToParcel(Parcel dest, int flags) {
+		dest.writeString(name);
+		dest.writeString(lastname);
+		dest.writeString(email);
+		dest.writeString(city);		
 	}
 		
 	

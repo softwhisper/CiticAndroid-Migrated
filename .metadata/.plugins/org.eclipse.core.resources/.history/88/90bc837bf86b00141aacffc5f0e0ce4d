@@ -1,0 +1,113 @@
+package and25.completo;
+
+import java.util.Map;
+
+import com.android.volley.Request.Method;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.inputmethod.EditorInfo;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.TextView.OnEditorActionListener;
+
+public class NewStudentActivity extends Activity {
+
+	private EditText editTextName;
+	private EditText editTextEmail;
+	private EditText editTextCity;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_new_student);
+		
+		bindUI();
+		setListeners();
+	}
+
+	private void bindUI() {
+		editTextName = (EditText)findViewById(R.id.editTextName);
+		editTextEmail = (EditText)findViewById(R.id.editTextEmail);
+		editTextCity = (EditText)findViewById(R.id.editTextCity);
+	}
+	
+	private void setListeners() {
+		editTextName.setOnEditorActionListener(new OnEditorActionListener() {			
+			@Override
+			public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+				if (actionId == EditorInfo.IME_ACTION_NEXT) {
+					editTextEmail.requestFocus();
+				}				
+				return true;
+			}
+		});
+		editTextEmail.setOnEditorActionListener(new OnEditorActionListener() {			
+			@Override
+			public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+				if (actionId == EditorInfo.IME_ACTION_NEXT) {
+					editTextCity.requestFocus();
+				}				
+				return true;
+			}
+		});		
+		editTextCity.setOnEditorActionListener(new OnEditorActionListener() {			
+			@Override
+			public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+				if (actionId == EditorInfo.IME_ACTION_SEND) {
+					postStudent();
+				}				
+				return true;
+			}
+		});
+	}
+	
+	private void postStudent() {
+		
+		StringRequest request = new StringRequest(Method.POST, "http://curso.softwhisper.es/stundents",
+		new Response.Listener<String>() {
+			@Override
+			public void onResponse(String arg0) {
+				
+			}
+		}, new Response.ErrorListener() {
+			@Override
+			public void onErrorResponse(VolleyError arg0) {
+				
+			}
+			
+		}){ 
+			@Override
+			public Map<String, String> getParams() {
+				Map<String, String> params = new HashMap<String, String>();
+				
+				return params;
+			}
+		};
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.new_student, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+}
