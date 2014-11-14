@@ -4,5 +4,6 @@
     <string name="app_name">And25.Completo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="add_student">Nuevo Alumno</string>
 
 </resources>

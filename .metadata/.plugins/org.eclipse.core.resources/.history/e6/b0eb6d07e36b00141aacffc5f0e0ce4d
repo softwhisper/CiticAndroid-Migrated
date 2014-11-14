@@ -1,0 +1,34 @@
+package and25.completo.adapters;
+
+import java.util.List;
+
+import and25.completo.models.Student;
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
+
+
+
+public class StudentArrayAdapter extends ArrayAdapter<Student> {
+	
+	private int resource;
+	
+	public StudentArrayAdapter(Context context, int textViewResourceId, List<Student> items) {
+		super(context, textViewResourceId, items);
+		resource = textViewResourceId;
+	}
+	
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		
+		LinearLayout view;
+		
+		Student student = getItem(position);
+		
+		
+		return convertView;
+	}
+
+}
