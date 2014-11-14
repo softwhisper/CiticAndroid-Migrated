@@ -1,0 +1,7 @@
+package and25.completo.models;
+
+import and25.completo.bbdd.ActiveRecord;
+
+public class Student extends ActiveRecord {
+
+}

@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="and02.almnos2.WebActivity"/>
-<fullyQualifiedTypeName name="android.webkit.WebView"/>
-<fullyQualifiedTypeName name="android.net.Uri"/>
-<fullyQualifiedTypeName name="android.content.Context"/>
-<fullyQualifiedTypeName name="android.widget.Spinner"/>
-<fullyQualifiedTypeName name="android.app.ListActivity"/>
-<fullyQualifiedTypeName name="android.content.Intent"/>
-<fullyQualifiedTypeName name="and02.almnos2.models.Alumno"/>
-<fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
 <fullyQualifiedTypeName name="and02.almnos2.R.layout"/>
 <fullyQualifiedTypeName name="and02.almnos2.R.id"/>
 <fullyQualifiedTypeName name="android.R"/>
@@ -20,7 +11,6 @@
 <fullyQualifiedTypeName name="android.preference.PreferenceManager"/>
 <fullyQualifiedTypeName name="android.content.SharedPreferences.Editor"/>
 <fullyQualifiedTypeName name="android.content.SharedPreferences"/>
-<fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -36,9 +26,38 @@
 <fullyQualifiedTypeName name="curso.and11.ClientsDBHelper"/>
 <fullyQualifiedTypeName name="java.net.URI"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="android.content.ContentValues"/>
 <fullyQualifiedTypeName name="android.content.ContentResolver"/>
 <fullyQualifiedTypeName name="curso.and11.ClientsProvider"/>
 <fullyQualifiedTypeName name="curso.and11.ClientsProvider.Clients"/>
+<fullyQualifiedTypeName name="curso.and20.MainActivity"/>
+<fullyQualifiedTypeName name="android.net.Uri"/>
+<fullyQualifiedTypeName name="android.os.Messenger"/>
+<fullyQualifiedTypeName name="android.os.Message"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="curso.and21.LocalWordService.MyBinder"/>
+<fullyQualifiedTypeName name="curso.and21.MainActivity"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="curso.and21.StartServiceReceiver"/>
+<fullyQualifiedTypeName name="android.app.PendingIntent"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="android.app.AlarmManager"/>
+<fullyQualifiedTypeName name="curso.and21.LocalWordService"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.j256.ormlite.table.DatabaseTable"/>
+<fullyQualifiedTypeName name="com.j256.ormlite.field.DatabaseField"/>
+<fullyQualifiedTypeName name="com.j256.ormlite.table.TableUtils"/>
+<fullyQualifiedTypeName name="com.android.volley.toolbox.JsonArrayRequest"/>
+<fullyQualifiedTypeName name="org.json.JSONArray"/>
+<fullyQualifiedTypeName name="com.android.volley.Response.Listener"/>
+<fullyQualifiedTypeName name="org.apache.http.protocol.ResponseConnControl"/>
+<fullyQualifiedTypeName name="com.android.volley.Response.ErrorListener"/>
+<fullyQualifiedTypeName name="com.android.volley.Response"/>
+<fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="org.json.JSONObject"/>
+<fullyQualifiedTypeName name="and25.completo.models.Student"/>
+<fullyQualifiedTypeName name="and25.completo.MainActivity"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="and25.completo.shared.VolleySingleton"/>
 </qualifiedTypeNameHistroy>

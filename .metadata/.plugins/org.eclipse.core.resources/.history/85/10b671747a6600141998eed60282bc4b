@@ -1,0 +1,23 @@
+package and25.completo.models;
+
+import com.j256.ormlite.table.DatabaseTable;
+
+import and25.completo.bbdd.ActiveRecord;
+
+@DatabaseTable
+public class Student extends ActiveRecord {
+	
+	public final String TAG = "Student";
+	
+	private int id;
+	
+	private String name;
+	
+	private String lastname;
+	
+	private String email;
+	
+	private String city;
+	
+	
+}

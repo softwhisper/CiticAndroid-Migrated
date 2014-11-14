@@ -12,6 +12,7 @@
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/pablo/Dropbox/Proyectos/CITIC.Android"/>
 			<item value="/Users/pablo/Dropbox/Proyectos/CITIC.Android/And21"/>
 			<item value="/Users/pablo/Dropbox/Proyectos/CITIC.Android/google-play-services_lib"/>
 			<item value="/Users/pablo/Dropbox/Proyectos/CiticAndroid"/>
